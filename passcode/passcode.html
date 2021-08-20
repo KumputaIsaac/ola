@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="passcode.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Red+Hat+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="passcode">
+        <div class="verifycenter">
+            <div class="iconback">
+                <img src="../images/v6.png" alt="">
+                <p>Back</p>
+            </div>
+            <p class="verifythis">Change your passcode</p>
+            <div class="input">
+                <div class="icon">
+                    <img src="../images/v7.png" alt="">
+                </div>
+                <input type="text" placeholder="Old code">
+            </div>
+            <div class="input">
+                <div class="icon">
+                    <img src="../images/v7.png" alt="">
+                </div>
+                <input type="text" placeholder="New password">
+            </div>
+            <div class="input">
+                <div class="icon">
+                    <img src="../images/v7.png" alt="">
+                </div>
+                <input type="text" placeholder="Confirm New Password">
+            </div>
+            <div onclick="openam()" class="continue">Continue </div>
+            <div class="chatadmin">
+                If you cant Remember your Passcode, Please talk to an admin
+            </div>
+        </div>
+    </div>
+    <div class="cover passcode none">
+        <div class="content">
+            <div id="cancel" class="cancel"><img src="../images/v5.png" alt=""></div> 
+            <div class="change">
+                <p>Passcode Changed Successfully</p>
+                <p>You have successfully changed your passcode and your new passcode has been set</p>
+                <img src="../images/Frame.png" alt="">
+                <div class="cancelcontinue">
+                    <!-- <div class="can"> CANCEL </div> -->
+                     <div class="can"> <a href="../index.html">CONTINUE</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let cancel = document.querySelector(".cancel");
+    let passcodecontinue = document.querySelector(".passcodecontinue");
+    let cover = document.querySelector(".cover");
+
+    cancel.addEventListener('click', function(){
+        console.log('cancel motherfucker')
+        cover.classList.add('none')
+
+    })
+
+     function openam(){
+        console.log('yes boss')
+        cover.classList.remove('none')
+    }
+
+    // passcodecontinue.addEventListener('click', function(){
+    //     console.log('open motherfucker')
+    //     cover.classList.remove('none')
+    // })
+</script>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+	background: rgba(49, 107, 3, 0.03);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* div {
+	border: 2px solid black;
+} */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.passcode {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.passcode .verifycenter {
+	width: auto;
+	/* height: 300px; */
+	/* background-color: white; */
+	padding: 25px;
+}
+
+.passcode .verifycenter .iconback {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+
+.passcode .verifycenter .iconback img {
+	width: 6.5px;
+	height: 13px;
+	margin-right: 10px;
+}
+
+.passcode .verifycenter .iconback p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: #037c0f;
+	margin: 0;
+}
+
+.passcode .verifycenter p.verifythis {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 49px;
+	color: #037c0f;
+	/* margin: 0px; */
+	margin-bottom: 21px;
+}
+
+.passcode .verifycenter .recordbox {
+	width: 523px;
+	height: 370px;
+	background: #ffffff;
+	border: 0.2px solid #037c0f;
+	box-sizing: border-box;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.passcode .verifycenter .recordbox .iconrecord img {
+	margin-bottom: 22px;
+}

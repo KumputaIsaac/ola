@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Onboarding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/image 1.png" alt="">
+            <img src="./images/image 2.png" alt="">
+        </div>
+        <div class="welcome">
+            <p>
+                Welcome to the Web Based <br/> Voter’s Registration System
+            </p>
+        </div>
+        <div class="whatyou">
+            <p>What do you want to do today?</p>
+        </div>
+        <div class="options">
+            <div class="option1" >
+                <div class="check" id="option1">
+                    <img src="./images/v3.png" alt="">
+                    <p>Change Passcode</p>
+                </div>
+                <div class="check">
+                    <img src="./images/v1.png" alt="">
+                    <a href="./votingstatus/votingstatus.html"><p>Check Status</p></a>
+                    
+                </div>
+            </div>
+            <div class="option2">
+                <div class="check">
+                    <img src="./images/v4.png" alt="">
+                    <a href="./records/records.html"><p>View records</p></a>
+                    
+                </div>
+                <div class="check">
+                    <img src="./images/v2.png" alt="">
+                    <p>Change Language</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="votingcommence">
+            <p>
+                Voting commences on 11:00am, 15th August 2021
+            </p>
+        </div>
+        <div class="everyvoter">
+            Every Voter must have updated their record and choose their prefered polling unit <br/> on or before 12:00am, 3rd of August 2021
+        </div>
+
+    </div>
+    <div class="unneccessary"></div>
+    <div class="cover none" id="cover">
+        <div class="content">
+            <div id="cancel" class="cancel"><img src="./images/v5.png" alt=""></div> 
+            <div class="change">
+                <p>Change Passcode</p>
+                <p>Changing your passcode will mean you’ll be setting a new passcode. This New Passcode will be used to log into your account</p>
+                <img src="./images//i1.png" alt="">
+                <div class="cancelcontinue">
+                    <div class="can"> CANCEL </div>
+                     <div class="can"> <a href="./verify/verify.html">CONTINUE</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message"><h1>Weray, na phone you wan use vote? use lappy jur</h1></div>
+</body>
+
+<script>
+    let cancel = document.querySelector(".cancel");
+    let option1 = document.querySelector("#option1");
+    let option2 = document.querySelector("#option2");
+    let cover = document.querySelector(".cover");
+
+    cancel.addEventListener('click', function(){
+        console.log('cancel motherfucker')
+        cover.classList.add('none')
+
+    })
+
+    option1.addEventListener('click', function(){
+        console.log('open motherfucker')
+        cover.classList.remove('none')
+    })
+</script>
+</html>

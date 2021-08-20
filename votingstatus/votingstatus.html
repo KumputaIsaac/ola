@@ -51,11 +51,11 @@
                     <p>Current Polling Unit</p>
                     <p>Shitta Local Govt Office, Surulere</p>
                 </div>
-                <div class="updatepollingunit"> Update polling unit</div>
+                <div id="option1" class="updatepollingunit"> Update polling unit</div>
             </div>
         </div>
     </div>
-    <div class="cover">
+    <div class="cover none">
         <div class="content">
             <div class="cancel"><img src="../images/v5.png" alt=""></div> 
             <div class="change">
@@ -69,5 +69,21 @@
             </div>
         </div>
     </div>
+    <script>
+        let cancel = document.querySelector(".cancel");
+        let option1 = document.querySelector("#option1");
+        let cover = document.querySelector(".cover");
+    
+        cancel.addEventListener('click', function(){
+            console.log('cancel motherfucker')
+            cover.classList.add('none')
+    
+        })
+    
+        option1.addEventListener('click', function(){
+            console.log('open motherfucker')
+            cover.classList.remove('none')
+        })
+    </script>
 </body>
 </html>
